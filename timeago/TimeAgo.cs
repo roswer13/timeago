@@ -16,11 +16,16 @@ public class TimeAgo
     {
         var localeSetting = locale ?? Default;
 
-        var messages = LookupMessagesMap[localeSetting];
-        if (messages == null)
+        LookupMessages? messages;
+
+        try
+        {
+            messages = LookupMessagesMap[localeSetting];
+        }
+        catch (Exception ex)
         {
             Console.Error.WriteLine(
-                $"Locale {localeSetting} has not been added, using {Default} as fallback. To add a locale use [setLocaleMessages]"
+                $"Locale {localeSetting} has not been added, using {Default} as fallback. To add a locale use [setLocaleMessages]. Exception: {ex}"
             );
             return string.Empty;
         }
