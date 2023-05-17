@@ -22,8 +22,8 @@ jobs:
         run: dotnet build
       - name: Test
         run: dotnet test
-      - run: dotnet build --configuration Release <my project>
+      - run: dotnet build --configuration Release timeago
       - name: Create the package
-        run: dotnet pack --configuration Release <my project>
+        run: dotnet pack --configuration Release timeago
       - name: Publish the package to GPR
-        run: dotnet nuget push <my project>/bin/Release/*.nupkg
+        run: dotnet nuget push timeago/bin/Release/*.nupkg
