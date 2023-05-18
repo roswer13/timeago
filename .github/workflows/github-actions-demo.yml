@@ -19,11 +19,6 @@ jobs:
       - name: Install dependencies
         run: dotnet restore
       - name: Build
-        run: dotnet build
+        run: dotnet build --configuration Release --no-restore
       - name: Test
-        run: dotnet test
-      - run: dotnet build --configuration Release timeago
-      - name: Create the package
-        run: dotnet pack --configuration Release timeago
-      - name: Publish the package to GPR
-        run: dotnet nuget push timeago/bin/Release/*.nupkg --api-key ${{secrets.APY_KEY_TIMEAGO}} --source https://api.nuget.org/v3/index.json
+        run: dotnet test --no-restore --verbosity normal
