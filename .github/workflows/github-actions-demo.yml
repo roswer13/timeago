@@ -19,9 +19,6 @@ jobs:
       - name: Install dependencies
         run: dotnet restore
       - name: Build
-        run: dotnet build
+        run: dotnet build --configuration Release --no-restore
       - name: Test
-        run: dotnet test
-      - run: dotnet build --configuration Release <my project>
-      - name: Create the package
-        run: dotnet pack --configuration Release <my project>
+        run: dotnet test --no-restore --verbosity normal

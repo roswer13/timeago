@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c94c657-778e-49fc-8dfa-42d527946c5c" name="Changes" comment="" />
+    <list default="true" id="0c94c657-778e-49fc-8dfa-42d527946c5c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.timeago/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.timeago/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +35,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "test",
+    "git-widget-placeholder": "script",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -61,6 +63,7 @@
       <option name="presentableId" value="Default" />
       <updated>1684244471706</updated>
       <workItem from="1684244473803" duration="7469000" />
+      <workItem from="1684332246911" duration="637000" />
     </task>
     <servers />
   </component>
